@@ -1,0 +1,46 @@
+Inicio da Aplicação (Backend) - npm init - y - Criação do package.json
+
+Utilização de um Framework (Rotas) - npm install express 
+
+Após a instalação do express e suas dependências, criamos um arquivo chamado index.js
+
+para executar a Aplicação, podemos usar - node index.js
+
+quando abrirmos o navegador em localhost:3333, irá exibir um erro, pq não criamos uma rota(GET)
+
+React JS (Criação de Projeto) - npx create-react-app frontend
+Para executar - npm start
+
+Métodos HTTP
+
+GET: Buscar uma informação do back-end
+POST: Criar uma informação no back-end
+PUT: Alterar uma informação no back-end
+DELETE: Deletar uma informação do back-end
+
+Tipos de Parâmetros
+
+Query Params: Parâmetros nomeados enviados na rota após "?", filtros/paginação
+Route Params: Parâmetros utilizados para identificar recursos
+Request Body: Corpo da requisição utlizado para criar/alterar recursos
+
+Para não precisamos rodar o código toda vez que alterarmos algo e fazer manualmente, utilizamos o nodemon
+npm install nodemon -D
+
+Para utilizamos o nodemon, temos que criar o proprio script de inicialização
+ "scripts": {
+    "start": "nodemon index.js"
+  },
+
+/** Banco de Dados
+ * SQL: MySql, SQLite, Oracle, etc...
+ * NoSQL: MongoDB, CouchDB, etc..
+*/
+
+/** SQLite
+ * Driver: SELECT * FROM Users
+ * Query Builder: table('users').select('*').where() - KNEXJS
+ * npm install knex --save
+ * npm install sqlite3
+ * Após instalações executar: npx knex init (gera um arquivo para instanciação do BD)
+ */
